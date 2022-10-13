@@ -4,7 +4,7 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 
 # Useful oh-my-zsh plugins for Le Wagon bootcamps
-plugins=(git gitfast last-working-dir common-aliases zsh-syntax-highlighting history-substring-search pyenv)
+plugins=(git gitfast last-working-dir common-aliases zsh-syntax-highlighting history-substring-search pyenv ssh-agent)
 
 # (macOS-only) Prevent Homebrew from reporting - https://github.com/Homebrew/brew/blob/master/docs/Analytics.md
 export HOMEBREW_NO_ANALYTICS=1
@@ -69,3 +69,30 @@ export EDITOR=code
 
 # Set ipdb as the default Python debugger
 export PYTHONBREAKPOINT=ipdb.set_trace
+
+#PYTHONPATH as modified furing LW/04-Decision Science
+export PYTHONPATH="/root/code/TmtStss/data-challenges/04-Decision-Science:$PYTHONPATH"
+
+# Github
+
+## ADDING
+alias ga="git add "
+alias gaa="git add ."
+alias gall="git add -A"
+## COMMITING
+alias gcm="git commit -m "
+## PULLING
+
+#alias gpom="git pull origin master"
+#alias gpo="git pull origin "
+#alias gsweep="git sweep"
+
+## CHECKING OUT
+#alias git checkout origin master="gcom"
+
+# Opening jupyter notebook easily
+alias juno="jupyter notebook"
+alias jlab="jupyter lab"
+
+# Opening vs code
+alias vsc="code"
